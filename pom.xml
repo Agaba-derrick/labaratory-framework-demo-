@@ -21,6 +21,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <spring-boot.version>2.6.4</spring-boot.version>
     </properties>
 
     <dependencies>
@@ -58,23 +59,26 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
-    
-<!-- postgress database -->
-    <dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <scope>runtime</scope>
-</dependency>
 
+        <!-- PostgreSQL Database -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.18</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
+            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <mainClass>demo.labaratoryframework.LabaratoryframeworkApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
