@@ -59,6 +59,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
+<!-- postgress database -->
+    <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <scope>runtime</scope>
+</dependency>
+
 
     <build>
         <plugins>
