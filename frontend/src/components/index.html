@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Framework App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lab Framework App</h1>
+        <nav>
+            <ul>
+                <!-- Add a link to the login page in the navigation -->
+                <li><a href="login.html">Login</a></li>
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main id="root"> <!-- Add an id to the main element for React to render into -->
+        <!-- Main content of your app will be rendered here -->
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <!-- Load React and ReactDOM libraries -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Load the compiled App.js file -->
+    <script src="App.js"></script>
+
+    <script>
+        // Render the App component into the root element
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
